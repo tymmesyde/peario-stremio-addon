@@ -1,6 +1,6 @@
 {
 	"name": "peario-stremio-addon",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Watch movies with your all your friends in sync !",
 	"main": "src/server.js",
 	"scripts": {
