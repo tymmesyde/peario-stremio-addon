@@ -6,10 +6,9 @@ const builder = new addonBuilder(manifest);
 builder.defineStreamHandler(({ type, id }) => {
 	console.log(`Streams: ${type} ${id}`);
 
-	let streams = [];
-	if (type === 'movie') streams = [{ 
+	const streams = [{
 		title: `👥 Watch with your friends\n🔗 ${PEARIO_URL}`,
-		externalUrl: `${PEARIO_URL}${PEARIO_STREAM_URL}/movie/${id}`
+		externalUrl: `${PEARIO_URL}${PEARIO_STREAM_URL}/${type}/${id}`
 	}];
 
 	return Promise.resolve({ streams });

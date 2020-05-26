@@ -10,6 +10,6 @@ module.exports = {
     background: `${DOMAIN}/public/background.png`,
     catalogs: [],
     resources: ['stream'],
-    types: ['movie'],
+    types: ['movie', 'series'],
     idPrefixes: ['tt']
 };
